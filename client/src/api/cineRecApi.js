@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const cineRecApi = axios.create({
-  baseURL: 'http://localhost:5001/api' // Your backend URL
+  baseURL: 'https://movie-recommendation-app-cph3.onrender.com/api' // Your backend URL
 });
 
 // Add a request interceptor to include the token
