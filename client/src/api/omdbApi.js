@@ -9,7 +9,7 @@ import axios from 'axios';
 // Create React App makes this variable available on the `process.env` object.
 const API_KEY = process.env.REACT_APP_OMDB_API_KEY;
 
-const BASE_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
+const BASE_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 
 // ... the rest of the file remains the same
 export const searchMovies = (query, page = 1) => axios.get(`${BASE_URL}&s=${query}&type=movie&page=${page}`);
